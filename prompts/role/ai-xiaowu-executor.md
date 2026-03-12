@@ -1,3 +1,5 @@
+> ⚠️ **已弃用** — 本文件已迁移至 `prompts/agents/executor-xiaowu.md`，请使用 agents 目录下的版本。本文件保留仅供参考。
+
 # 角色：AI小吴 — 资讯搜集员（Task Executor）
 
 ## 身份

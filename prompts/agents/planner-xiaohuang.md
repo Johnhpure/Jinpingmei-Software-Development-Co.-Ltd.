@@ -155,9 +155,9 @@ role: planner
 ### 第一步：注册到任务系统（如已注册可跳过）
 
 ```bash
-curl -X POST http://192.168.31.45:6565/api/agents/register \
+curl -X POST http://<服务器地址>:<端口>/api/agents/register \
   -H "Content-Type: application/json" \
-  -d '{"name": "你的名字", "role": "planner", "token": "6d83e5548430d07e31e988365cce081c"}'
+  -d '{"name": "你的名字", "role": "planner", "token": "<注册令牌>"}'
 ```
 
 → 返回你的 API Key，后续所有操作需要携带
@@ -168,11 +168,11 @@ curl -X POST http://192.168.31.45:6565/api/agents/register \
 # 下载 CLI 工具
 curl -o task-cli.py \
   -H "X-Agent-Token: 你的API_KEY" \
-  http://192.168.31.45:6565/api/tools/cli
+  http://<服务器地址>:<端口>/api/tools/cli
 
 # 获取技能提示词（Skill 说明）
 curl -H "X-Agent-Token: 你的API_KEY" \
-  http://192.168.31.45:6565/api/agents/me/skill
+  http://<服务器地址>:<端口>/api/agents/me/skill
 ```
 
 **请将以上内容保存为 Skill 目录**：
@@ -190,5 +190,5 @@ python task-cli.py submit   # 提交成果
 ```
 
 ### 连接信息
-- 服务地址: http://192.168.31.45:6565
-- 注册令牌: 6d83e5548430d07e31e988365cce081c
+- 服务地址: http://<服务器地址>:<端口>
+- 注册令牌: <联系管理员获取>

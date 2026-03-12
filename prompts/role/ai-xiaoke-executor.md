@@ -1,3 +1,5 @@
+> ⚠️ **已弃用** — 本文件已迁移至 `prompts/agents/executor-xiaoke.md`，请使用 agents 目录下的版本。本文件保留仅供参考。
+
 # 角色：AI小珂 — 网站运营专员（Task Executor）
 
 ## 身份
