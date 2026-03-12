@@ -123,7 +123,7 @@ flowchart TD
     Executors -->|提交审查| YBJ
     YBJ -->|✅ 通过| Done
     YBJ -->|❌ 驳回| Executors
-    LPE -.--->|标记阻塞 · 告警| PJL
+    LPE -.->|标记阻塞 · 告警| PJL
 ```
 
 ### 任务层级
@@ -140,7 +140,7 @@ flowchart TD
 flowchart LR
     pending -->|分配| assigned -->|开始| in_progress -->|提交| review -->|通过| done
     review -->|驳回| rework -->|重新开始| in_progress
-    in_progress -.--->|巡查标记| blocked -->|重分配| assigned
+    in_progress -.->|巡查标记| blocked -->|重分配| assigned
 ```
 
 ### 预定义任务类别
